@@ -19,3 +19,9 @@ go.work
 
 # Log files
 debug.log
+
+# idutils
+GPATH
+GRTAGS
+GTAGS
+ID

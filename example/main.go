@@ -21,9 +21,9 @@ func main() {
 	// Set log output to the file
 	log.SetOutput(logFile)
 
-	file, err := os.Open("example/main.go")
+	file, err := os.Open("main.go")
 	if err != nil {
-		log.Fatalf("Failed to open example/main.go: %v", err)
+		log.Fatalf("Failed to open main.go: %v", err)
 	}
 	defer file.Close()
 
@@ -42,7 +42,7 @@ func main() {
 	// WithFileName is used for syntax highlighting
 	editor := vimtea.NewEditor(
 		vimtea.WithContent(string(buf)),
-		vimtea.WithFileName("example/main.go"),
+		vimtea.WithFileName("main.go"),
 		vimtea.WithFullScreen(),
 	)
 
